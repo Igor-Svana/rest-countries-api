@@ -12,8 +12,16 @@
   background: transparent;
 }
 
-.input-label-container label {
+.input-label-container label, i {
   text-transform: capitalize;
+  transition: transform 300ms ease-in;
+}
+
+.filterbar-conatiner input:hover ~ .input-label-container label{
+  transform: scale(1.05)
+}
+.filterbar-conatiner input:hover ~ .input-label-container i{
+  transform: scale(1.5)
 }
 
 .filterbar-conatiner .input-label-container {
@@ -68,10 +76,19 @@
   .filterbar {
     height: 2rem;
     border-radius: 0.5rem;
+    width: 25vw;
+  }
+  .filterbar-conatiner .input-label-container {
+    width: 19vw;
+    margin-top: -1.8em;
+    margin-left: 2em;
+  }
+  .region-list-container {
+    width: 25vw;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .filterbar-conatiner .input-label-container {
     width: 40vw;
     margin-top: -1.8em;

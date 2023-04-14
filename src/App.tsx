@@ -54,6 +54,7 @@ function App() {
   };
 
   useEffect(() => {
+    console.log('render')
     const fetch = async () => {
       const fetchCountries = await fetchData<ICountires[]>(
         import.meta.env.VITE_API_URL

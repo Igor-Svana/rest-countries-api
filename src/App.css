@@ -114,6 +114,7 @@ header {
 
   .sub-header-container {
     width: 80%;
+    height: 120px;
   }
   .countries-grid {
     row-gap: 1em;
@@ -137,7 +138,7 @@ header {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .header-bar h1 {
     font-size: 1rem;
   }
