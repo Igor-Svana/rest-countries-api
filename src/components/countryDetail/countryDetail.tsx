@@ -35,20 +35,18 @@ const CountryDetail = ({
   languages,
   borders,
 }: ICountryDetail) => {
-  console.log(name,
-    nativeName,
-    population,
-    region,
-    subregion,
-    capital,
-    tld,
-    currency,
-    languages,
-    borders,);
-          
-  const ntvName = nativeName ? Object.values(nativeName).map((ntvName) => ntvName.official + " ") : [];
-  const cur = currency ? Object.values(currency).map((cur) => cur.name) : [];
-  const lng = languages ? Object.values(languages).map((ang) => ang) : [];
+ 
+  let ntv: string = "";
+  const ntvName = nativeName ? Object.values(nativeName).map((ntvName) => {
+   
+   if(ntv != ntvName.official){
+    ntv = ntvName.official;
+    return ntvName.official + " "
+   }
+    
+  }) : [];
+  const cur = currency ? Object.values(currency).map((cur) => cur.name + " ") : [];
+  const lng = languages ? Object.values(languages).map((ang) => ang + " ") : [];
   return (
     <div className="country-container">
       <img src={flag} alt="flag" />

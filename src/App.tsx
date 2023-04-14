@@ -45,7 +45,7 @@ function App() {
     const searchedContry = countries.filter((country) => {
       return country.name.official
         .toLocaleLowerCase()
-        .includes(inputTxt.target.value);
+        .includes(inputTxt.target.value.toLocaleLowerCase());
     });
     const paginationCountries = searchedContry.slice((page - 1) * 8, page * 8);
     setSearchInputCountries(paginationCountries);

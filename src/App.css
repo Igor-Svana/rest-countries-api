@@ -157,6 +157,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 11vh;
+    height: 80px;
   }
 }
