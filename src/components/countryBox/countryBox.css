@@ -1,0 +1,48 @@
+.box-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: .7em;
+    box-shadow: 0 .5em .8em rgba(0, 0, 0, 0.123);
+    cursor: pointer;
+    animation: animate 500ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+}
+
+.box-container:hover{
+    transform: scale(1.05);
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+img{
+    width: 100%;
+    max-height: 212px;
+    box-shadow: 0 .5em .8em rgba(0, 0, 0, 0.123);
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: .7em;
+    padding: 2em 1em;
+    font-weight: 600;
+}
+
+p{
+    color: hsl(0, 0%, 52%);
+    margin: 0;
+}
+
+span{
+    font-weight: 800;
+}
