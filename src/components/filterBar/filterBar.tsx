@@ -12,8 +12,8 @@ const FilterBar = ({ bg, color, fetchRegionHandler, region }: IFilterBox) => {
  
   return (
     <div className="filterbar-conatiner">
-      <input className="filterbar input" id="overlay-input" readOnly />
       <label htmlFor="overlay-input"></label>
+      <input className="filterbar input" id="overlay-input" readOnly />
       <div className="filterbar" style={{ background: bg }}></div>
       <div className="input-label-container">
         <label>{region==="all" ? "Filter by region" : region}</label>
