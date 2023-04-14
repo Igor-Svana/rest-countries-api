@@ -2,7 +2,6 @@ import {
   useState,
   useEffect,
   ChangeEvent,
-  MouseEventHandler,
   MouseEvent,
 } from "react";
 import SearchBar from "./components/searchBar/searchBar";
